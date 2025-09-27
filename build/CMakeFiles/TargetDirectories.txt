@@ -1,0 +1,3 @@
+/home/timur/projects/rubik-cube/build/CMakeFiles/rubiks.dir
+/home/timur/projects/rubik-cube/build/CMakeFiles/edit_cache.dir
+/home/timur/projects/rubik-cube/build/CMakeFiles/rebuild_cache.dir

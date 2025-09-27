@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/rubiks.dir/link.d CMakeFiles/rubiks.dir/src/main.c.o -o rubiks  /usr/lib/libraylib.so -lm -lpthread -ldl -lrt -lX11 -L/usr/lib -lraylib

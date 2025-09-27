@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/timur/projects/rubik-cube/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
