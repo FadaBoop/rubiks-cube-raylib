@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/timur/projects/rubik-cube/src/main.c" "CMakeFiles/rubiks.dir/src/main.c.o" "gcc" "CMakeFiles/rubiks.dir/src/main.c.o.d"
+  "/home/timur/projects/rubik-cube/src/main.cpp" "CMakeFiles/rubiks.dir/src/main.cpp.o" "gcc" "CMakeFiles/rubiks.dir/src/main.cpp.o.d"
   "" "rubiks" "gcc" "CMakeFiles/rubiks.dir/link.d"
   )
 

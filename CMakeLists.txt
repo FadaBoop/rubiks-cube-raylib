@@ -3,9 +3,9 @@ project(RubiksCube)
 
 set(CMAKE_CXX_STANDARD 17)
 
-find_package(raylib 5.0 REQUIRED)   # Arch ships 5.x
+find_package(raylib 5.0 REQUIRED)
 
-add_executable(rubiks src/main.c)
+add_executable(rubiks src/main.cpp)
 
 target_link_libraries(rubiks raylib)
 

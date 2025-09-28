@@ -1,9 +1,6 @@
 #include "raylib.h"
 
-void DRAW_RUBIKS_CUBE(){
-    Vector3 pos = {0.0f, 0.0f, 0.0f};
-    Vector3 size = {1.0f, 1.0f, 1.0f};
-
+void DRAW_RUBIKS_CUBE(int cubeArray[9][12], Vector3 &pos, Vector3 &size, Color colors[]){
     for(int i = 0; i<9; i++)
         for(int j = 0; j<12; j++)
             if(cubeArray[i][j]!=0){
@@ -61,9 +58,9 @@ int main(void)
     const int screenHeight = 800;
 
     // 1 Blanco, 2 Verde, 3 Rojo, 4 Azul, 5 Naranja, 6 Amarillo
-    Color colors[] = {BROWN, WHITE, GREEN, RED, BLUE, ORANGE, YELLOW};
+    Color colorsList[] = {BROWN, WHITE, GREEN, RED, BLUE, ORANGE, YELLOW};
     //                  0      1      2     3     4      5       6
-    int cubeArray[9][12] = {
+    int rubikArray[9][12] = {
         {0, 0, 0,   1, 1, 1,    0, 0, 0,    0, 0, 0},
         {0, 0, 0,   1, 1, 1,    0, 0, 0,    0, 0, 0},
         {0, 0, 0,   1, 1, 1,    0, 0, 0,    0, 0, 0},
@@ -88,6 +85,9 @@ int main(void)
     camera.projection = CAMERA_PERSPECTIVE;             // Camera mode type
     DisableCursor(); 
 
+    Vector3 defaultPos = {0.0f, 0.0f, 0.0f};
+    Vector3 defaultSize = {1.0f, 1.0f, 1.0f};
+
     while (!WindowShouldClose())
     {
         BeginDrawing();
@@ -97,7 +97,8 @@ int main(void)
             ClearBackground(WHITE);
 
             BeginMode3D(camera);
-                DRAW_RUBIKS_CUBE();
+            
+                DRAW_RUBIKS_CUBE(rubikArray, defaultPos, defaultSize, colorsList);
                 DrawGrid(10, 1.0f);
 
             EndMode3D();
